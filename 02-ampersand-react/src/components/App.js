@@ -12,7 +12,7 @@ class AppComponent extends React.Component {
   render(){
     return (
       <div>
-        <h1>Guy's Meetup Planner</h1>
+        <h1>Guy&#x27;s Meetup Planner</h1>
 
         <AttendeesForm
           addAttendee = {this.addAttendee}
