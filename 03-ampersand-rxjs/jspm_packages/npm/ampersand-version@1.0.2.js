@@ -1,1 +1,0 @@
-module.exports = require("npm:ampersand-version@1.0.2/ampersand-version");

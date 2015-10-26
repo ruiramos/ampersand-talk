@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash.shuffle@3.1.0/index");

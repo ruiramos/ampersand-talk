@@ -1,1 +1,0 @@
-module.exports = require("npm:global@4.3.0/window");

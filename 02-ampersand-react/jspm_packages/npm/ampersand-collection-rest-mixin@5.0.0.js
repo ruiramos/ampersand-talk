@@ -1,1 +1,0 @@
-module.exports = require("npm:ampersand-collection-rest-mixin@5.0.0/ampersand-collection-rest-mixin");

@@ -1,1 +1,0 @@
-module.exports = require("npm:dom-walk@0.1.1/index");

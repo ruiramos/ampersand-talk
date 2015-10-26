@@ -1,1 +1,0 @@
-module.exports = require("npm:min-document@2.17.0/index");

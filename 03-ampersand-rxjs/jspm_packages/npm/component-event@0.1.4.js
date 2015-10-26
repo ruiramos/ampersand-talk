@@ -1,1 +1,0 @@
-module.exports = require("npm:component-event@0.1.4/index");

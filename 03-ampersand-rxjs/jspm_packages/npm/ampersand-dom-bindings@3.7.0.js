@@ -1,1 +1,0 @@
-module.exports = require("npm:ampersand-dom-bindings@3.7.0/ampersand-dom-bindings");

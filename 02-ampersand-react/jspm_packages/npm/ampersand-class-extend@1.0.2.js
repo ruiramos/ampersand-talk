@@ -1,1 +1,0 @@
-module.exports = require("npm:ampersand-class-extend@1.0.2/ampersand-class-extend");

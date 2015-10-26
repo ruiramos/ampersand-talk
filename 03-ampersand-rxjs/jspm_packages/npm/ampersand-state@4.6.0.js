@@ -1,1 +1,0 @@
-module.exports = require("npm:ampersand-state@4.6.0/ampersand-state");

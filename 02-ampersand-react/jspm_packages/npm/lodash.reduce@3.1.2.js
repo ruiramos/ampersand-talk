@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash.reduce@3.1.2/index");

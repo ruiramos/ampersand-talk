@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash._binaryindex@3.0.1/index");

@@ -1,1 +1,0 @@
-module.exports = require("npm:trim@0.0.1/index");

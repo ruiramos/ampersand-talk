@@ -1,1 +1,0 @@
-module.exports = require("npm:array-next@0.0.1/array-next");

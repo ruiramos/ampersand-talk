@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash._invokepath@3.7.2/index");

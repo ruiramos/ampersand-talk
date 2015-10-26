@@ -1,1 +1,0 @@
-module.exports = require("npm:is-function@1.0.1/index");

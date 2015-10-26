@@ -1,1 +1,0 @@
-module.exports = require("npm:domify@1.4.0/index");

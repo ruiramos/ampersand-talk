@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash._basetostring@3.0.1/index");

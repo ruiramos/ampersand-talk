@@ -1,1 +1,0 @@
-module.exports = require("npm:bl@1.0.0/bl");

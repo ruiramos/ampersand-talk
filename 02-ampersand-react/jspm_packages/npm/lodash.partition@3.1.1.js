@@ -1,1 +1,0 @@
-module.exports = require("npm:lodash.partition@3.1.1/index");
