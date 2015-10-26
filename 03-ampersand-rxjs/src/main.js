@@ -20,7 +20,8 @@ var CoolGame = View.extend({
     y: ['number', false, 0],
     target: ['object', false, function(){
       return {x: 300, y: 200};
-    }]
+    }],
+    maxDistance: ['number', false, 100]
   },
 
   derived: {
@@ -33,7 +34,7 @@ var CoolGame = View.extend({
     tooFar: {
       deps: ['distance'],
       fn(){
-        return this.distance > 100;
+        return this.distance > this.maxDistance;
       }
     }
   },
@@ -52,27 +53,44 @@ var CoolGame = View.extend({
         el.style.top = value.y + 'px';
         el.style.left = value.x + 'px';
       }
+    },
+    maxDistance: {
+      hook: 'target-element',
+      type: function(el, value){
+        el.style.width = 2 * value + 'px';
+        el.style.height = 2 * value + 'px';
+        el.style.marginLeft = -value + 'px';
+        el.style.marginTop = -value + 'px';
+      }
     }
   },
 
   initialize(){
-    Rx.Observable.fromEvent(document, 'mousemove')
+    var mousemove = Rx.Observable.fromEvent(document, 'mousemove');
+    var mousedown = Rx.Observable.fromEvent(document, 'mousedown').map(1);
+    var mouseup = Rx.Observable.fromEvent(document, 'mouseup').map(-1);
+    var mouseIsDown = mousedown.merge(mouseup).startWith(-1);
+
+    mousemove
       .subscribe(e => {
         this.set({
           x: e.clientX,
           y: e.clientY
         });
-      })
+      });
+
 
     Rx.Observable
       .interval(100)
-      .subscribe((val) => {
-        this.target = this.moveTarget(this.target, val);
+      .combineLatest(mouseIsDown)
+      .subscribe(vals => {
+        this.target = this.moveTarget(this.target, vals[0]);
+        this.maxDistance = Math.max(this.maxDistance + vals[1], 10)
       })
   },
 
   moveTarget(oldTarget, val){
-    if(!val || val % 25 === 0){
+    if(!this.direction || val % 25 === 0){
       // change direction everynow and then
       this.direction = sample(Vectors);
     }
