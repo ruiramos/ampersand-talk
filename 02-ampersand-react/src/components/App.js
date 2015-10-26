@@ -35,7 +35,7 @@ class AppComponent extends React.Component {
   addAttendee = (person) => this.props.model.add(person);
 
   // removes... yeah
-  removeAttendee = (person) => { console.log(person); this.props.model.remove(person); }
+  removeAttendee = (person) => { this.props.model.remove(person); }
 
   // calls the collection fetch to get attendees from meetup
   importAtendees = () => this.props.model.fetch();
