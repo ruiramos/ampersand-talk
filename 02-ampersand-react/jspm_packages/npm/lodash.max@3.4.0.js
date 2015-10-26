@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash.max@3.4.0/index");

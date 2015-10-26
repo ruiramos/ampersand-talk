@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Events</title>
+</head>
+<body>
+  <div class="container">
+    <button class="left">Click me</button>
+    <button class="right">Click me</button>
+  </div>
+  <br>
+  <button onclick="unbind()">Unbind</button>
+  <script src="../build/build.js"></script>
+  <script>
+    var Events = require('events');
+    var button = document.querySelector('.container');
+
+    var events = Events(button, {
+      left: function(){
+        alert('left click')
+      },
+      right: function() {
+        alert('right click')
+      }
+    });
+
+    events.bind({
+      'click .left': 'left',
+      'click .right': 'right'
+    });
+
+    function unbind() {
+      events.unbind();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash._baseflatten@3.1.4/index");

@@ -1,0 +1,1 @@
+module.exports = require("npm:component-classes@1.2.4/index");

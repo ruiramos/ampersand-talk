@@ -1,0 +1,14 @@
+{
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "ampersand-view": "npm:ampersand-view@^9.0.0",
+      "rx": "npm:rx@^4.0.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}

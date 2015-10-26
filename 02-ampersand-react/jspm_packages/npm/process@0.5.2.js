@@ -1,0 +1,1 @@
+module.exports = require("npm:process@0.5.2/browser");

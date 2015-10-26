@@ -1,0 +1,1 @@
+module.exports = require("npm:get-object-path@0.0.2/index");

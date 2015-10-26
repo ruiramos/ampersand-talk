@@ -1,0 +1,59 @@
+{
+  "name": "dom-walk",
+  "version": "0.1.1",
+  "description": "iteratively walk a DOM node",
+  "keywords": [],
+  "author": {
+    "name": "Raynos",
+    "email": "raynos2@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Raynos/dom-walk.git"
+  },
+  "main": "index",
+  "homepage": "https://github.com/Raynos/dom-walk",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/dom-walk/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "devDependencies": {
+    "browserify-server": "~0.5.6"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/dom-walk/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {},
+  "_id": "dom-walk@0.1.1",
+  "_shasum": "672226dc74c8f799ad35307df936aba11acd6018",
+  "_from": ".",
+  "_npmVersion": "1.4.10",
+  "_npmUser": {
+    "name": "raynos",
+    "email": "raynos2@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "raynos",
+      "email": "raynos2@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "672226dc74c8f799ad35307df936aba11acd6018",
+    "tarball": "http://registry.npmjs.org/dom-walk/-/dom-walk-0.1.1.tgz"
+  },
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {}
+}

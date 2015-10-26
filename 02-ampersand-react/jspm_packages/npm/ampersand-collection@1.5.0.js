@@ -1,0 +1,1 @@
+module.exports = require("npm:ampersand-collection@1.5.0/ampersand-collection");

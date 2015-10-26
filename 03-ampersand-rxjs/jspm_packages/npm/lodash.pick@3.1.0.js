@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash.pick@3.1.0/index");

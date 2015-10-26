@@ -1,0 +1,79 @@
+{
+  "name": "create-ecdh",
+  "version": "2.0.2",
+  "description": "createECDH but browserifiable",
+  "main": "browser.js",
+  "browser": "browser.js",
+  "scripts": {
+    "test": "node test.js | tspec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypto-browserify/createECDH.git"
+  },
+  "keywords": [
+    "diffie",
+    "hellman",
+    "diffiehellman",
+    "ECDH"
+  ],
+  "author": {
+    "name": "Calvin Metcalf"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crypto-browserify/createECDH/issues"
+  },
+  "homepage": "https://github.com/crypto-browserify/createECDH",
+  "devDependencies": {
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.1"
+  },
+  "gitHead": "a0dc2b85e0868e85e3c7d284c4ed75a2077fe7d7",
+  "_id": "create-ecdh@2.0.2",
+  "_shasum": "5b0dc9e1241944a29973f8cd2ecf1ba0cadb6255",
+  "_from": ".",
+  "_npmVersion": "3.3.4",
+  "_nodeVersion": "4.1.1",
+  "_npmUser": {
+    "name": "dcousens",
+    "email": "email@dcousens.com"
+  },
+  "dist": {
+    "shasum": "5b0dc9e1241944a29973f8cd2ecf1ba0cadb6255",
+    "tarball": "http://registry.npmjs.org/create-ecdh/-/create-ecdh-2.0.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "cwmma",
+      "email": "calvin.metcalf@gmail.com"
+    },
+    {
+      "name": "dcousens",
+      "email": "email@dcousens.com"
+    },
+    {
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
+    },
+    {
+      "name": "jprichardson",
+      "email": "jprichardson@gmail.com"
+    },
+    {
+      "name": "indutny",
+      "email": "fedor@indutny.com"
+    }
+  ],
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {
+    "bn.js": "bn.js@^2.0.0",
+    "elliptic": "elliptic@^3.0.0",
+    "buffer": "github:jspm/nodelibs-buffer@^0.1.0",
+    "crypto": "github:jspm/nodelibs-crypto@^0.1.0"
+  }
+}

@@ -1,0 +1,1 @@
+module.exports = require("npm:closest@0.0.1/index");

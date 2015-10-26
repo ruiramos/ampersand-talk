@@ -1,0 +1,1 @@
+module.exports = require("npm:media-type@0.3.0/lib/mediaType");

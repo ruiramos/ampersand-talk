@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash._basecompareascending@3.0.2/index");

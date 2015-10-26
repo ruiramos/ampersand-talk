@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash._baserandom@3.0.1/index");

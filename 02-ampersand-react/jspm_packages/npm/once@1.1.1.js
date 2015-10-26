@@ -1,0 +1,1 @@
+module.exports = require("npm:once@1.1.1/once");

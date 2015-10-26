@@ -1,0 +1,1 @@
+module.exports = require("npm:fetch-jsonp@0.9.2/build/fetch-jsonp");

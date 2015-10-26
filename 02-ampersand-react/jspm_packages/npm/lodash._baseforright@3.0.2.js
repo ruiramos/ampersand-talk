@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash._baseforright@3.0.2/index");

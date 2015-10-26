@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crazy Game!</title>
+</head>
+<style>
+  * { box-sizing: border-box;}
+
+  .app-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  .app-container.way-too-far {
+    background: yellow;
+  }
+
+  .target {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background: black;
+    border-radius: 100%;
+    transition: top 100ms linear, left 100ms linear;
+  }
+
+  .target:after {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    top: -95px;
+    left: -95px;
+    border:1px solid #ccc;
+    border-radius: 100%;
+    content: ' ';
+  }
+
+</style>
+<body>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('src/main');
+  </script>
+</body>
+</html>

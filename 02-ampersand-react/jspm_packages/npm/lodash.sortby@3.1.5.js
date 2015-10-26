@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash.sortby@3.1.5/index");

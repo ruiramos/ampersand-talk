@@ -1,0 +1,1 @@
+module.exports = require("npm:lodash._replaceholders@3.0.0/index");

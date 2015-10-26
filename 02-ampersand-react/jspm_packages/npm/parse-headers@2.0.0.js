@@ -1,0 +1,1 @@
+module.exports = require("npm:parse-headers@2.0.0/parse-headers");

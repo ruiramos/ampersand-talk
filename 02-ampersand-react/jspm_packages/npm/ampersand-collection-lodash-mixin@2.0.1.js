@@ -1,0 +1,1 @@
+module.exports = require("npm:ampersand-collection-lodash-mixin@2.0.1/ampersand-collection-lodash-mixin");
