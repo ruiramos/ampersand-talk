@@ -50,6 +50,7 @@ var CoolGame = View.extend({
     target: {
       hook: 'target-element',
       type(el, value){
+        // moves the target
         el.style.top = value.y + 'px';
         el.style.left = value.x + 'px';
       }
@@ -57,6 +58,7 @@ var CoolGame = View.extend({
     maxDistance: {
       hook: 'target-element',
       type: function(el, value){
+        // updates the radius
         el.style.width = 2 * value + 'px';
         el.style.height = 2 * value + 'px';
         el.style.marginLeft = -value + 'px';
@@ -69,8 +71,11 @@ var CoolGame = View.extend({
     var mousemove = Rx.Observable.fromEvent(document, 'mousemove');
     var mousedown = Rx.Observable.fromEvent(document, 'mousedown').map(1);
     var mouseup = Rx.Observable.fromEvent(document, 'mouseup').map(-1);
+
+    // mouse is down stream (down = 1, up = -1)
     var mouseIsDown = mousedown.merge(mouseup).startWith(-1);
 
+    // registers the mouse position
     mousemove
       .subscribe(e => {
         this.set({
@@ -79,7 +84,7 @@ var CoolGame = View.extend({
         });
       });
 
-
+    // moves the target and updates maxDistance (the radius)
     Rx.Observable
       .interval(100)
       .combineLatest(mouseIsDown)
